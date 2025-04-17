@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllinTrip - Bangladesh Domestic Travel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>Allin<span>Trip</span></h1>
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#transport">Transport</a></li>
+                    <li><a href="#offers">Offers</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a href="#" class="btn btn-outline" id="login-btn">Login</a>
+                    <a href="#" class="btn btn-primary" id="register-btn">Register</a>
+                </div>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Explore the Beauty of Bangladesh</h1>
+                <p>Book flights, buses, trains, and ferries to your favorite destinations</p>
+                
+                <div class="search-box">
+                    <div class="search-tabs">
+                        <button class="tab-btn active" data-tab="flight">
+                            <i class="fas fa-plane"></i> Flight
+                        </button>
+                        <button class="tab-btn" data-tab="bus">
+                            <i class="fas fa-bus"></i> Bus
+                        </button>
+                        <button class="tab-btn" data-tab="train">
+                            <i class="fas fa-train"></i> Train
+                        </button>
+                        <button class="tab-btn" data-tab="ferry">
+                            <i class="fas fa-ship"></i> Ferry
+                        </button>
+                    </div>
+                    
+                    <div class="search-form">
+                        <div class="form-group">
+                            <label for="from">From</label>
+                            <input type="text" id="from" placeholder="Departure city">
+                        </div>
+                        <div class="form-group">
+                            <label for="to">To</label>
+                            <input type="text" id="to" placeholder="Arrival city">
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date">
+                        </div>
+                        <div class="form-group">
+                            <label for="passengers">Passengers</label>
+                            <select id="passengers">
+                                <option value="1">1 Passenger</option>
+                                <option value="2">2 Passengers</option>
+                                <option value="3">3 Passengers</option>
+                                <option value="4">4 Passengers</option>
+                                <option value="5">5+ Passengers</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary search-btn">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="popular-destinations" id="destinations">
+        <div class="container">
+            <div class="section-header">
+                <h2>Popular Destinations</h2>
+                <p>Explore top-rated destinations loved by travelers around Bangladesh</p>
+            </div>
+            
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1614605658364-33212f7bff10?auto=format&fit=crop&w=500&h=300&q=80" alt="Cox's Bazar">
+                        <div class="destination-overlay">
+                            <h3>Cox's Bazar</h3>
+                            <p>Flights from ৳2,999</p>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <div class="rating-location">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                                <span class="reviews">(2,451 reviews)</span>
+                            </div>
+                            <div class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Chittagong Division</span>
+                            </div>
+                        </div>
+                        <p class="description">The longest natural sandy beach in the world with stunning views and vibrant culture.</p>
+                        <button class="btn btn-outline btn-full">View Deals</button>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1632632643333-6c228276b4d8?auto=format&fit=crop&w=500&h=300&q=80" alt="Sundarbans">
+                        <div class="destination-overlay">
+                            <h3>Sundarbans</h3>
+                            <p>Flights from ৳5,000</p>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <div class="rating-location">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7</span>
+                                <span class="reviews">(1,876 reviews)</span>
+                            </div>
+                            <div class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Khulna Division</span>
+                            </div>
+                        </div>
+                        <p class="description">World's largest mangrove forest and home to the Royal Bengal Tiger.</p>
+                        <button class="btn btn-outline btn-full">View Deals</button>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1598339440000-7a4499cde157?auto=format&fit=crop&w=500&h=300&q=80" alt="Sylhet Tea Gardens">
+                        <div class="destination-overlay">
+                            <h3>Sylhet Tea Gardens</h3>
+                            <p>Flights from ৳2,500</p>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <div class="rating-location">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.6</span>
+                                <span class="reviews">(1,543 reviews)</span>
+                            </div>
+                            <div class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Sylhet Division</span>
+                            </div>
+                        </div>
+                        <p class="description">Lush green tea gardens surrounded by rolling hills and scenic beauty.</p>
+                        <button class="btn btn-outline btn-full">View Deals</button>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1606994868513-fc84ce9929a3?auto=format&fit=crop&w=500&h=300&q=80" alt="Saint Martin's Island">
+                        <div class="destination-overlay">
+                            <h3>Saint Martin's Island</h3>
+                            <p>Flights from ৳6,000</p>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <div class="rating-location">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                                <span class="reviews">(3,210 reviews)</span>
+                            </div>
+                            <div class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Chittagong Division</span>
+                            </div>
+                        </div>
+                        <p class="description">Bangladesh's only coral island with crystal clear waters and beautiful beaches.</p>
+                        <button class="btn btn-outline btn-full">View Deals</button>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1591017931612-3fdcabb565dc?auto=format&fit=crop&w=500&h=300&q=80" alt="Rangamati">
+                        <div class="destination-overlay">
+                            <h3>Rangamati</h3>
+                            <p>Flights from ৳3,500</p>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <div class="rating-location">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.5</span>
+                                <span class="reviews">(1,723 reviews)</span>
+                            </div>
+                            <div class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Chittagong Division</span>
+                            </div>
+                        </div>
+                        <p class="description">Beautiful lake and hillside views with rich tribal culture and history.</p>
+                        <button class="btn btn-outline btn-full">View Deals</button>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1610531003141-5b6b7b00ecd8?auto=format&fit=crop&w=500&h=300&q=80" alt="Bandarban">
+                        <div class="destination-overlay">
+                            <h3>Bandarban</h3>
+                            <p>Flights from ৳4,200</p>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <div class="rating-location">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7</span>
+                                <span class="reviews">(2,104 reviews)</span>
+                            </div>
+                            <div class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Chittagong Division</span>
+                            </div>
+                        </div>
+                        <p class="description">Mountain region with waterfalls, hills and diverse tribal cultures.</p>
+                        <button class="btn btn-outline btn-full">View Deals</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-all-container">
+                <a href="#" class="btn btn-outline view-all">
+                    Explore All Destinations
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="transportation-modes" id="transport">
+        <div class="container">
+            <div class="section-header">
+                <h2>Travel Your Way</h2>
+                <p>Choose from multiple transportation options to suit your journey</p>
+            </div>
+            
+            <div class="transport-grid">
+                <div class="transport-card flight-card">
+                    <div class="transport-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>Flight</h3>
+                    <p>Fastest way to travel between major cities in Bangladesh</p>
+                    <div class="features">
+                        <span><i class="fas fa-suitcase"></i> Baggage included</span>
+                        <span><i class="fas fa-shield-alt"></i> Insurance</span>
+                    </div>
+                    <div class="transport-image">
+                        <img src="https://images.unsplash.com/photo-1536407078615-9fd99f8a2ada?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200&q=80" alt="Flight transportation">
+                    </div>
+                    <button class="btn btn-outline btn-full">Book Flight</button>
+                </div>
+                
+                <div class="transport-card bus-card">
+                    <div class="transport-icon">
+                        <i class="fas fa-bus"></i>
+                    </div>
+                    <h3>Bus</h3>
+                    <p>Economical option with extensive routes throughout Bangladesh</p>
+                    <div class="features">
+                        <span><i class="fas fa-wifi"></i> Free WiFi</span>
+                        <span><i class="fas fa-plug"></i> Power outlets</span>
+                    </div>
+                    <div class="transport-image">
+                        <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200&q=80" alt="Bus transportation">
+                    </div>
+                    <button class="btn btn-outline btn-full">Book Bus</button>
+                </div>
+                
+                <div class="transport-card train-card">
+                    <div class="transport-icon">
+                        <i class="fas fa-train"></i>
+                    </div>
+                    <h3>Train</h3>
+                    <p>Comfortable and scenic rail journeys across Bangladesh</p>
+                    <div class="features">
+                        <span><i class="fas fa-utensils"></i> Dining car</span>
+                        <span><i class="fas fa-bed"></i> Sleeper cabins</span>
+                    </div>
+                    <div class="transport-image">
+                        <img src="https://images.unsplash.com/photo-1474487548417-781cb71495f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200&q=80" alt="Train transportation">
+                    </div>
+                    <button class="btn btn-outline btn-full">Book Train</button>
+                </div>
+                
+                <div class="transport-card ferry-card">
+                    <div class="transport-icon">
+                        <i class="fas fa-ship"></i>
+                    </div>
+                    <h3>Ferry</h3>
+                    <p>Travel through Bangladesh's extensive river networks</p>
+                    <div class="features">
+                        <span><i class="fas fa-car"></i> Vehicle transport</span>
+                        <span><i class="fas fa-couch"></i> Lounge access</span>
+                    </div>
+                    <div class="transport-image">
+                        <img src="https://images.unsplash.com/photo-1587060258053-32b5e9cd76cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200&q=80" alt="Ferry transportation">
+                    </div>
+                    <button class="btn btn-outline btn-full">Book Ferry</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking-steps">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Book your journey in 4 simple steps</p>
+            </div>
+            
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="step-number">1</div>
+                    <h3>Search</h3>
+                    <p>Enter your destinations, dates, and passenger details</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <div class="step-number">2</div>
+                    <h3>Select</h3>
+                    <p>Choose from available transportation options</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="step-number">3</div>
+                    <h3>Book</h3>
+                    <p>Enter passenger information and payment details</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-ticket-alt"></i>
+                    </div>
+                    <div class="step-number">4</div>
+                    <h3>Confirm</h3>
+                    <p>Receive your e-ticket and travel confirmation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="special-offers" id="offers">
+        <div class="container">
+            <div class="section-header-with-action">
+                <div>
+                    <h2>Special Offers</h2>
+                    <p>Limited-time deals you don't want to miss</p>
+                </div>
+                <a href="#" class="btn-link">
+                    View All Offers
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <img src="https://images.unsplash.com/photo-1614605658364-33212f7bff10?auto=format&fit=crop&w=500&h=300&q=80" alt="Cox's Bazar Weekend Gateway">
+                    <div class="offer-content">
+                        <h3>Cox's Bazar Weekend Gateway</h3>
+                        <p>Enjoy a 3-day beach escape with hotel and transportation included.</p>
+                        <div class="offer-details">
+                            <div class="pricing">
+                                <span class="original-price">৳12,000</span>
+                                <span class="discounted-price">৳10,200</span>
+                            </div>
+                            <button class="btn btn-primary">Book Now</button>
+                        </div>
+                        <p class="validity">Valid until 30 June 2025</p>
+                    </div>
+                </div>
+                
+                <div class="offer-card">
+                    <img src="https://images.unsplash.com/photo-1561127954-65393e6722c7?auto=format&fit=crop&w=500&h=300&q=80" alt="Sylhet Tea Gardens Tour">
+                    <div class="offer-content">
+                        <h3>Sylhet Tea Gardens Tour</h3>
+                        <p>Experience the beauty of Sylhet's tea plantations with guided tours and luxury accommodation.</p>
+                        <div class="offer-details">
+                            <div class="pricing">
+                                <span class="original-price">৳15,000</span>
+                                <span class="discounted-price">৳12,000</span>
+                            </div>
+                            <button class="btn btn-primary">Book Now</button>
+                        </div>
+                        <p class="validity">Valid until 31 May 2025</p>
+                    </div>
+                </div>
+                
+                <div class="offer-card">
+                    <img src="https://images.unsplash.com/photo-1590579491624-f98f36d4c763?auto=format&fit=crop&w=500&h=300&q=80" alt="Sundarbans Wildlife Expedition">
+                    <div class="offer-content">
+                        <h3>Sundarbans Wildlife Expedition</h3>
+                        <p>Explore the world's largest mangrove forest with expert guides and comfortable accommodations.</p>
+                        <div class="offer-details">
+                            <div class="pricing">
+                                <span class="original-price">৳18,000</span>
+                                <span class="discounted-price">৳13,500</span>
+                            </div>
+                            <button class="btn btn-primary">Book Now</button>
+                        </div>
+                        <p class="validity">Valid until 31 July 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Travelers Say</h2>
+                <p>Read reviews from customers who experienced our service</p>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"AllinTrip made my journey to Cox's Bazar seamless. The booking process was easy, and the bus service was comfortable and on time."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rahul Ahmed">
+                        </div>
+                        <div class="author-info">
+                            <h4>Rahul Ahmed</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>Traveled to Cox's Bazar</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"I booked a train to Sylhet through AllinTrip and was impressed by how easy it was to compare different options and choose the best one for my schedule."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Fatima Begum">
+                        </div>
+                        <div class="author-info">
+                            <h4>Fatima Begum</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p>Traveled to Sylhet</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The special offer for the Sundarbans trip was incredible value. Everything was well-organized, and the guides were knowledgeable. Highly recommend!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Kamal Hossain">
+                        </div>
+                        <div class="author-info">
+                            <h4>Kamal Hossain</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>Traveled to Sundarbans</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="mobile-app">
+        <div class="container">
+            <div class="app-content">
+                <div class="app-info">
+                    <h2>Download the AllinTrip App</h2>
+                    <p>Get the best travel deals and manage your bookings on the go with our mobile app.</p>
+                    <ul class="app-features">
+                        <li><i class="fas fa-check-circle"></i> Exclusive mobile-only deals</li>
+                        <li><i class="fas fa-check-circle"></i> Manage bookings with ease</li>
+                        <li><i class="fas fa-check-circle"></i> Real-time travel updates</li>
+                        <li><i class="fas fa-check-circle"></i> Offline e-tickets access</li>
+                    </ul>
+                    <div class="app-buttons">
+                        <a href="#" class="app-btn">
+                            <i class="fab fa-google-play"></i>
+                            <div>
+                                <span>GET IT ON</span>
+                                <strong>Google Play</strong>
+                            </div>
+                        </a>
+                        <a href="#" class="app-btn">
+                            <i class="fab fa-apple"></i>
+                            <div>
+                                <span>Download on the</span>
+                                <strong>App Store</strong>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="app-image">
+                    <img src="https://i.ibb.co/zFRYm8L/mobile-app-preview.png" alt="AllinTrip Mobile App">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Get updates on the latest travel deals and news</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <div class="logo">
+                        <h2>Allin<span>Trip</span></h2>
+                    </div>
+                    <p>Your one-stop platform for booking domestic travel across Bangladesh with ease.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#transport">Transport</a></li>
+                        <li><a href="#offers">Offers</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section support">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Travel Street, Dhaka, Bangladesh</li>
+                        <li><i class="fas fa-phone"></i> +880 1234 567890</li>
+                        <li><i class="fas fa-envelope"></i> support@allintrip.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 AllinTrip. All rights reserved.</p>
+                <div class="payment-methods">
+                    <span>Payment Methods:</span>
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <img src="https://i.ibb.co/pjNFvKL/bkash-logo.png" alt="bKash" class="local-payment">
+                    <img src="https://i.ibb.co/KxQVZQZ/nagad-logo.png" alt="Nagad" class="local-payment">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Auth Modal -->
+    <div class="modal" id="auth-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-tabs">
+                <button class="modal-tab active" data-tab="login">Login</button>
+                <button class="modal-tab" data-tab="register">Register</button>
+            </div>
+            
+            <div class="modal-body">
+                <div class="tab-content active" id="login-tab">
+                    <form id="login-form">
+                        <div class="form-group">
+                            <label for="login-username">Username</label>
+                            <input type="text" id="login-username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">Password</label>
+                            <input type="password" id="login-password" required>
+                        </div>
+                        <div class="form-group remember-forgot">
+                            <div>
+                                <input type="checkbox" id="remember-me">
+                                <label for="remember-me">Remember me</label>
+                            </div>
+                            <a href="#" class="forgot-password">Forgot password?</a>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Login</button>
+                    </form>
+                </div>
+                
+                <div class="tab-content" id="register-tab">
+                    <form id="register-form">
+                        <div class="form-group">
+                            <label for="register-username">Username</label>
+                            <input type="text" id="register-username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="register-email">Email</label>
+                            <input type="email" id="register-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="register-password">Password</label>
+                            <input type="password" id="register-password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="register-confirm-password">Confirm Password</label>
+                            <input type="password" id="register-confirm-password" required>
+                        </div>
+                        <div class="form-group terms">
+                            <input type="checkbox" id="terms">
+                            <label for="terms">I agree to the <a href="#">Terms & Conditions</a></label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
+
+
+
